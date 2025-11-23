@@ -1,5 +1,5 @@
 ---
-data: 2025-11-22
+date: 2025-11-22
 参考资料: dp进阶之路   oiwiki
 cssclasses:
   - dp
