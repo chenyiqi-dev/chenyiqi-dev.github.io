@@ -1,0 +1,57 @@
+site_name: 我的技术博客
+site_url: https://yourname.github.io/blog/  # 替换为你最终的域名
+site_author: Your Name
+
+theme:
+  name: material
+  language: zh             # 界面语言设为中文
+  features:
+    - navigation.tabs         # 顶部导航栏模式
+    - navigation.top          # 返回顶部按钮
+    - navigation.tracking     # URL随着滚动改变
+    - search.suggest          # 搜索建议
+    - search.highlight        # 搜索结果高亮
+    - content.code.copy       # 代码块一键复制按钮
+  palette:                    # 亮色/暗色模式切换
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+# 插件配置
+plugins:
+  - search
+  - blog:                     # 启用博客插件
+      post_dir: blog/posts    # 文章存放目录（相对于docs）
+      archive: true           # 开启归档页面
+      categories: true        # 开启分类
+  # - rss:                    # RSS订阅（需安装 mkdocs-rss-plugin）
+      # match_path: blog/posts/.*
+
+# Markdown 扩展（技术博客必备）
+markdown_extensions:
+  - admonition                # 提示块 (Info, Warning)
+  - pymdownx.details          # 折叠块
+  - pymdownx.superfences      # 强大的代码块支持
+  - pymdownx.highlight:       # 代码高亮配置
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.arithmatex:      # 数学公式支持
+      generic: true
+
+# 额外的 JavaScript（用于渲染数学公式）
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
