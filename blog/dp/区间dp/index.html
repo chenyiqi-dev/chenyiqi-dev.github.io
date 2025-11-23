@@ -6,31 +6,37 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-      
-        <meta name="author" content="chenyqi">
-      
-      
-        <link rel="canonical" href="https://chenyiqi-dev.github.io/blog/2025/11/22/%E5%8C%BA%E9%97%B4dp/">
+        <meta name="description" content="这是一个关于技术、算法和编程学习的个人博客">
       
       
+        <meta name="author" content="陈奕圻">
+      
+      
+        <link rel="canonical" href="https://chenyiqi-dev.github.io/blog/dp/%E5%8C%BA%E9%97%B4dp/">
+      
+      
+        <link rel="prev" href="../../%E8%B4%AA%E5%BF%83/">
+      
+      
+        <link rel="next" href="../%E6%A0%91%E5%BD%A2dp/">
       
       
         
       
       
-      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>区间dp - 我的技术博客</title>
+        <title>区间dp - 陈奕圻的技术博客</title>
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +55,7 @@
       
     
     
-    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -88,7 +94,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../../../.." title="我的技术博客" class="md-header__button md-logo" aria-label="我的技术博客" data-md-component="logo">
+    <a href="../../.." title="陈奕圻的技术博客" class="md-header__button md-logo" aria-label="陈奕圻的技术博客" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -102,7 +108,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            我的技术博客
+            陈奕圻的技术博客
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -209,7 +215,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -232,7 +238,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../../" class="md-tabs__link">
+        <a href="../../%E8%B4%AA%E5%BF%83/" class="md-tabs__link">
           
   
   
@@ -255,9 +261,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -268,13 +272,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../.." title="我的技术博客" class="md-nav__button md-logo" aria-label="我的技术博客" data-md-component="logo">
+    <a href="../../.." title="陈奕圻的技术博客" class="md-nav__button md-logo" aria-label="陈奕圻的技术博客" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    我的技术博客
+    陈奕圻的技术博客
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -286,7 +290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -365,21 +369,17 @@
                 
   
   
-    
   
   
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      <a href="../../../../" class="md-nav__link">
+    <li class="md-nav__item">
+      <a href="../../%E8%B4%AA%E5%BF%83/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Blog
+    两种基本贪心
   
 
     
@@ -397,6 +397,8 @@
                 
   
   
+    
+  
   
   
     
@@ -407,11 +409,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -421,7 +423,7 @@
   <span class="md-ellipsis">
     
   
-    归档
+    Dp
   
 
     
@@ -432,12 +434,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             
   
-    归档
+    Dp
   
 
           </label>
@@ -447,19 +449,121 @@
                 
   
   
-  
     
   
   
-    <li class="md-nav__item">
-      <a href="../../../../archive/2025/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    区间dp
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    2025
+    区间dp
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        区间dp概述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1p1880-noi1995-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题目1：P1880 [NOI1995] 石子合并 - 洛谷
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21039" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题目2：1039. 多边形三角剖分的最低得分
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%A0%91%E5%BD%A2dp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    树形dp
   
 
     
@@ -495,8 +599,6 @@
               </div>
             
             
-              
-                
               
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
@@ -556,67 +658,11 @@
             
           
           
-  <div class="md-content md-content--post" data-md-component="content">
-    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
-      <div class="md-sidebar__scrollwrap">
-        <div class="md-sidebar__inner md-post">
-          <nav class="md-nav md-nav--primary">
-            <div class="md-post__back">
-              <div class="md-nav__title md-nav__container">
-                <a href="../../../../" class="md-nav__link">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-                  <span class="md-ellipsis">
-                    回到主页
-                  </span>
-                </a>
-              </div>
-            </div>
-            
-            <ul class="md-post__meta md-nav__list">
-              <li class="md-nav__item md-nav__item--section">
-                <div class="md-post__title">
-                  <span class="md-ellipsis">
-                    元数据
-                  </span>
-                </div>
-                <nav class="md-nav">
-                  <ul class="md-nav__list">
-                    <li class="md-nav__item">
-                      <div class="md-nav__link">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2025-11-22 00:00:00+00:00" class="md-ellipsis">2025年11月22日</time>
-                      </div>
-                    </li>
-                    
-                    
-                    
-                      
-                      <li class="md-nav__item">
-                        <div class="md-nav__link">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
-                          <span class="md-ellipsis">
-                            
-                              需要 2 分钟阅读时间
-                            
-                          </span>
-                        </div>
-                      </li>
-                    
-                  </ul>
-                </nav>
-              </li>
-            </ul>
-            
-          </nav>
-          
-        </div>
-      </div>
-    </div>
-    <article class="md-content__inner md-typeset">
-      
-        
-  
-
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
 
 
 
@@ -716,14 +762,12 @@
 
 
 
-  
 
 
-
-      
-    </article>
-  </div>
-
+                
+              </article>
+            </div>
+          
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -763,12 +807,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tracking", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tracking", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
-        <script src="../../../../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
