@@ -1,6 +1,7 @@
-site_name: 我的技术博客
+site_name: 陈奕圻的技术博客
 site_url: https://chenyiqi-dev.github.io/  # 替换为你最终的域名
-site_author: chenyqi
+site_author: 陈奕圻
+site_description: 这是一个关于技术、算法和编程学习的个人博客
 
 theme:
   name: material
@@ -29,10 +30,10 @@ theme:
 # 插件配置
 plugins:
   - search
-  - blog:                     # 启用博客插件
-      post_dir: blog/posts    # 文章存放目录（相对于docs）
-      archive: true           # 开启归档页面
-      categories: true        # 开启分类
+  #- blog:                     # 启用博客插件
+  #    post_dir: blog/posts    # 文章存放目录（相对于docs）
+  #    archive: true           # 开启归档页面
+  #    categories: true        # 开启分类
   # - rss:                    # RSS订阅（需安装 mkdocs-rss-plugin）
       # match_path: blog/posts/.*
 
