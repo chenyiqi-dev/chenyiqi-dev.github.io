@@ -1,6 +1,13 @@
 ---
 date: 2025-11-22
-参考资料: dp进阶之路   oiwiki
+title: 区间 DP 学习笔记：石子合并与多边形剖分
+description: 详解区间动态规划（Interval DP）的核心思想与代码模版。涵盖如何处理环形问题（断环为链）、枚举区间长度与分界点的技巧。深入分析洛谷 P1880 石子合并与 LeetCode 1039 多边形三角剖分两道经典例题。
+tags:
+  - 算法
+  - 动态规划
+  - 区间DP
+  - LeetCode
+  - Python
 cssclasses:
   - dp
 ---
