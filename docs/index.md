@@ -11,7 +11,7 @@ hide:
 > 这里是我的数字花园，记录算法学习、技术复盘以及编程路上的点点滴滴。
 
 <!-- 下面是两个按钮 -->
-[开始阅读博客](blog/index.md){ .md-button .md-button--primary } 
+[开始阅读博客](note/index.md){ .md-button .md-button--primary } 
 [访问我的 GitHub](https://github.com/chenyiqi-dev){ .md-button }
 
 ---
@@ -28,23 +28,9 @@ hide:
 
     这里是我刷题的核心战场。包含动态规划、贪心、图论等高频考点的详细解析与模版。
 
-    [阅读笔记](blog/index.md)
+    [阅读笔记](note/index.md)
 
--   :material-laptop: **技术复盘**
 
-    ---
-
-    记录 Python 开发技巧、MkDocs 建站踩坑记录以及日常开发中遇到的 Bug 解决方案。
-
-    [查看归档](blog/archive/2025.md)
-
--   :material-account: **关于我**
-
-    ---
-
-    一名热爱技术的开发者。喜欢折腾新工具，相信“输出是最好的输入”。
-
-    [了解更多](about.md)
 
 </div>
 
