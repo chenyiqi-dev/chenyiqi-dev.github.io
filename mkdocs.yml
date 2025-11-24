@@ -50,6 +50,11 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.arithmatex:      # 数学公式支持
       generic: true
+  - attr_list             # 允许添加 { .md-button } 这种样式
+  - md_in_html            # 允许在 HTML 标签里写 Markdown
+  - pymdownx.emoji:       # 启用图标支持
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 # 额外的 JavaScript（用于渲染数学公式）
 extra_javascript:
