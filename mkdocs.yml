@@ -75,4 +75,5 @@ copyright: >
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 extra:
-  google_site_verification:<meta name="google-site-verification" content="SgrC2qU_Fp7tpadpdThD2qUgA3KjmTkJuRUzYz-bkxE" />
+  google_site_verification:
+	<meta name="google-site-verification" content="SgrC2qU_Fp7tpadpdThD2qUgA3KjmTkJuRUzYz-bkxE" />
