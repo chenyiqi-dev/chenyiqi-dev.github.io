@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://chen17.xyz/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
+    </url>
+    <url>
+         <loc>https://chen17.xyz/WSL/wsl/</loc>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://chen17.xyz/note/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://chen17.xyz/note/%E8%B4%AA%E5%BF%83/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://chen17.xyz/note/dp/%E5%8C%BA%E9%97%B4dp/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://chen17.xyz/note/dp/%E6%A0%91%E5%BD%A2dp/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://chen17.xyz/%E7%99%BE%E5%BA%A6%E4%B9%8B%E6%98%9F%E7%9C%9F%E9%A2%98/%E7%99%BE%E5%BA%A6%E4%B9%8B%E6%98%9F%20BD202511%20Yummy/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
 </urlset>
