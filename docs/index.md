@@ -42,7 +42,7 @@ hide:
     工欲善其事，必先利其器。记录 WSL、VS Code 等开发环境的高效搭建指南。
 
     <!-- 请确认这里的文件路径是否正确 -->
-    [查看教程](WSL/wsl.md)
+    [查看教程](blog/wsl.md)
 
 </div>
 
@@ -52,7 +52,7 @@ hide:
 
 这里列出了我最近更新的一些深度思考，欢迎阅读：
 
-*   **[告别虚拟机！WSL + VS Code 环境配置](WSL/wsl.md)**  
+*   **[告别虚拟机！WSL + VS Code 环境配置](blog/wsl.md)**  
     *{ .date } 2025-11-27*  
     手把手教你配置 Windows Subsystem for Linux，十分钟打造最现代化的 Linux 开发环境。
 
