@@ -907,7 +907,7 @@
   <h1>区间 DP 学习笔记：石子合并与多边形剖分</h1>
 
 <!-- more -->
-<h3 id="dp">区间dp概述</h3>
+<h3 id="dp">区间dp概述<a class="headerlink" href="#dp" title="Permanent link">&para;</a></h3>
 <p>通过枚举<strong>区间分界点</strong>进行转移
 这类问题经常有环，环的处理通常两种方法：
 1. 加倍
@@ -915,7 +915,7 @@
 有可能需要提前处理合并区间费用，不要忘记预处理和前缀和</p>
 <p>区间dp建议用递归记忆化搜索更符合思考逻辑，因为核心思想是分治，把大问题分成小问题解决
 下面两题都是递推想的，非常难想</p>
-<h3 id="1p1880-noi1995-">题目1：<a href="https://www.luogu.com.cn/problem/P1880">P1880 [NOI1995] 石子合并 - 洛谷</a></h3>
+<h3 id="1p1880-noi1995-">题目1：<a href="https://www.luogu.com.cn/problem/P1880">P1880 [NOI1995] 石子合并 - 洛谷</a><a class="headerlink" href="#1p1880-noi1995-" title="Permanent link">&para;</a></h3>
 <p>注意：这题有环
 令f(i, j)表示i,j处理 [i, j]区间，也就是合并[i, j]区间的石子，而k是分割点（合并点）
 状态转移方程 f(i, j) = max(f(i, k) + f(k + 1,  j)) + sum(i ,  j)
@@ -950,7 +950,7 @@
 </span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="nb">print</span><span class="p">(</span><span class="n">minm</span><span class="p">)</span>  
 </span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="nb">print</span><span class="p">(</span><span class="n">maxm</span><span class="p">)</span>
 </span></code></pre></div>
-<h3 id="21039">题目2：<a href="https://leetcode.cn/problems/minimum-score-triangulation-of-polygon/">1039. 多边形三角剖分的最低得分</a></h3>
+<h3 id="21039">题目2：<a href="https://leetcode.cn/problems/minimum-score-triangulation-of-polygon/">1039. 多边形三角剖分的最低得分</a><a class="headerlink" href="#21039" title="Permanent link">&para;</a></h3>
 <p>这题和上一题有一些条件上的改变</p>
 <p><code>dp[i][j]</code>表示以<strong>i, j 为底</strong>，从i 顺时针到j 的多边形的答案
 底边固定了只需要在区间内枚举顶点就好了</p>

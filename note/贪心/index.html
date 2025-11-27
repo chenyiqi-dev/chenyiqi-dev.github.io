@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#_2" class="md-skip">
           跳转至
         </a>
       
@@ -531,8 +531,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -575,8 +573,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -593,23 +589,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="排序策略">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        如何确定“怎么排”？
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -617,6 +596,17 @@
     <span class="md-ellipsis">
       
         基于堆的贪心
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        不相交区间（区间调度）
       
     </span>
   </a>
@@ -855,8 +845,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -873,23 +861,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="排序策略">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        如何确定“怎么排”？
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -897,6 +868,17 @@
     <span class="md-ellipsis">
       
         基于堆的贪心
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        不相交区间（区间调度）
       
     </span>
   </a>
@@ -920,11 +902,11 @@
 
 
 
-<h1 id="_1">两种基本贪心</h1>
-<h3 id="_2">排序策略</h3>
+<h1 id="_1">两种基本贪心<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h3 id="_2">排序策略<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <p>「我们将 XXX 按照某某顺序排序，然后按某种顺序（例如从小到大）选择。」
 如果答案与数组元素顺序无关，一般需要<strong>排序</strong>。排序后，可以遍历计算。</p>
-<h5 id="_3">如何确定“怎么排”？</h5>
+<h5 id="_3">如何确定“怎么排”？<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h5>
 <p>做贪心题时，如果你觉得需要排序，可以尝试用 <strong>“邻项交换法” (Exchange Argument)</strong> 在草稿纸上推导一下：
 假设有两个相邻的任务 A 和 B。
 1.  如果是顺序 <strong>A, B</strong>，总收益是多少？
@@ -990,14 +972,14 @@
 </span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>                <span class="n">ans</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">ans</span><span class="p">,</span> <span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="n">get</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>  
 </span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>        <span class="k">return</span> <span class="n">ans</span>
 </span></code></pre></div>
-<h3 id="_4">基于堆的贪心</h3>
+<h3 id="_4">基于堆的贪心<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <ul>
 <li>「我们每次都取 XXX 中最大/小的东西，并更新 XXX。」（有时「XXX 中最大/小的东西」可以优化，比如用优先队列维护）</li>
 <li>二者的区别在于一种是离线的，先处理后选择；一种是在线的，边处理边选择。</li>
 </ul>
-<h1 id="_5">区间贪心</h1>
+<h1 id="_5">区间贪心<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h1>
 <p>区间贪心有如下经典问题：</p>
-<h3 id="_6">不相交区间（区间调度）</h3>
+<h3 id="_6">不相交区间（区间调度）<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <p>（单机器调度/活动安排）：给定一些区间，从中选出尽量多的两两互不相交的区间。
 问题：规定时间内，尽可能多的完成任务
 - 贪心：最早结束时间优先</p>
