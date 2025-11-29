@@ -52,6 +52,10 @@ hide:
 
 这里列出了我最近更新的一些深度思考，欢迎阅读：
 
+*   **[树状数组 (BIT) 详解：单点修改与区间查询的 O(log n) 利器](note/数据结构/树状数组.md)**  
+    *{ .date } 2025-11-29*  
+    深入解析树状数组（Binary Indexed Tree）的核心原理。提供 Python 版“单点修改”与“区间查询”的通用模板，并附带洛谷 P3374 题解。
+
 *   **[告别虚拟机！WSL + VS Code 环境配置](blog/wsl.md)**  
     *{ .date } 2025-11-27*  
     手把手教你配置 Windows Subsystem for Linux，十分钟打造最现代化的 Linux 开发环境。
