@@ -6,19 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="树形动态规划（Tree DP）的核心逻辑解析。探讨如何利用 DFS 后序遍历（自底向上）进行状态转移。以经典题目 P1352“没有上司的舞会”为例，详细讲解建图、寻找根节点及 Python 递归实现的注意事项。">
+        <meta name="description" content="深入解析树状数组（Binary Indexed Tree）的核心原理。对比普通数组与前缀和的优劣，详解 lowbit 运算与树形结构。提供 Python 版“单点修改”与“区间查询”的通用模板，并附带洛谷 P3374 题解。">
       
       
         <meta name="author" content="陈奕圻">
       
       
-        <link rel="canonical" href="https://chen17.xyz/note/dp/%E6%A0%91%E5%BD%A2dp/">
+        <link rel="canonical" href="https://chen17.xyz/note/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/">
       
       
-        <link rel="prev" href="../%E5%8C%BA%E9%97%B4dp/">
+        <link rel="prev" href="../../dp/%E6%A0%91%E5%BD%A2dp/">
       
       
-        <link rel="next" href="../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/">
+        <link rel="next" href="../../%E8%B4%AA%E5%BF%83/%E8%B4%AA%E5%BF%83/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>树形 DP 入门：从“没有上司的舞会”看递归状态转移 - 陈奕圻的技术博客</title>
+        <title>树状数组 (BIT) 详解：单点修改与区间查询的 O(log n) 利器 - 陈奕圻的技术博客</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1p1352-" class="md-skip">
+        <a href="#1" class="md-skip">
           跳转至
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              树形 DP 入门：从“没有上司的舞会”看递归状态转移
+              树状数组 (BIT) 详解：单点修改与区间查询的 O(log n) 利器
             
           </span>
         </div>
@@ -522,8 +522,6 @@
                 
   
   
-    
-  
   
   
     
@@ -534,11 +532,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -559,7 +557,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -577,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E5%8C%BA%E9%97%B4dp/" class="md-nav__link">
+      <a href="../../dp/%E5%8C%BA%E9%97%B4dp/" class="md-nav__link">
         
   
   
@@ -602,6 +600,94 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dp/%E6%A0%91%E5%BD%A2dp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    树形 DP 入门：从“没有上司的舞会”看递归状态转移
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据结构
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    数据结构
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
     
   
   
@@ -619,7 +705,7 @@
   <span class="md-ellipsis">
     
   
-    树形 DP 入门：从“没有上司的舞会”看递归状态转移
+    树状数组 (BIT) 详解：单点修改与区间查询的 O(log n) 利器
   
 
     
@@ -637,7 +723,7 @@
   <span class="md-ellipsis">
     
   
-    树形 DP 入门：从“没有上司的舞会”看递归状态转移
+    树状数组 (BIT) 详解：单点修改与区间查询的 O(log n) 利器
   
 
     
@@ -661,10 +747,87 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1p1352-" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        题目1：P1352 没有上司的舞会 - 洛谷
+        1. 为什么要用树状数组？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-lowbit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 核心原理：lowbit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 结构理解
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 树状数组的能力范围
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 树状数组的树形态
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 两种操作
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 模板
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#p3374-1-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        模板题P3374 【模板】树状数组 1 - 洛谷
       
     </span>
   </a>
@@ -675,92 +838,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    数据结构
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    数据结构
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    树状数组 (BIT) 详解：单点修改与区间查询的 O(log n) 利器
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -977,10 +1054,87 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1p1352-" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        题目1：P1352 没有上司的舞会 - 洛谷
+        1. 为什么要用树状数组？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-lowbit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 核心原理：lowbit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 结构理解
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 树状数组的能力范围
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 树状数组的树形态
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 两种操作
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 模板
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#p3374-1-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        模板题P3374 【模板】树状数组 1 - 洛谷
       
     </span>
   </a>
@@ -1004,53 +1158,94 @@
 
 
 
-  <h1>树形 DP 入门：从“没有上司的舞会”看递归状态转移</h1>
-
-<p>也体现了<strong>分治</strong>的思想，第一个子树，第二个子树，......然后合并
-由于树固有的递归性质，树形 DP 一般都是<strong>递归</strong>进行的
-每一个父亲都是由各个儿子决定的，其实就是<strong>后续遍历</strong>（左右中，自底向上）</p>
-<p>树的存储：树的存储不一定是以树的形式，一般是图的形式，邻接表或者链式前向星。所以树形dp是心中有图，实际无图</p>
-<h3 id="1p1352-">题目1：<a href="https://www.luogu.com.cn/problem/P1352">P1352 没有上司的舞会 - 洛谷</a><a class="headerlink" href="#1p1352-" title="Permanent link">&para;</a></h3>
-<p>递归：分为两种情况：1.选当前节点，那就不能选子节点了；2.不选当前节点，那可以选子节点，也可以不选</p>
-<p>递归知道了，但是怎么找根节点来开始递归？
-    提前用一个数组记录每个节点的父节点，没有父节点就是根节点了</p>
-<p>由于树形dp没有重复子问题，所以不能用记忆化搜索</p>
-<p>为什么用dp表，不用纯递归返回两个数？
-    使用 <code>dp</code> 数组是动态规划的标准范式，<strong>便于理解公式、便于调试、便于处理更复杂的后续问题（如输出路径）</strong>
-    并且python每次创建一个元组会产生一些开销</p>
-<p>本题N比较大，要手动设置递归深度<code>sys.setrecursionlimit(1000000)</code>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>  
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">sys</span><span class="o">.</span><span class="n">setrecursionlimit</span><span class="p">(</span><span class="mi">1000000</span><span class="p">)</span>  
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>  
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">r</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>  
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>  
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">r</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">()))</span>  
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">path</span> <span class="o">=</span> <span class="p">[[]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span>  
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">is_child</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># 是否有父节点  </span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>  
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">l</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>  
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">path</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>  
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="n">is_child</span><span class="p">[</span><span class="n">l</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>  
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>  <span class="c1"># 找根节点  </span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    <span class="k">if</span> <span class="n">is_child</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        <span class="n">root</span> <span class="o">=</span> <span class="n">i</span>  
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="n">dp</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span>  
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="c1"># dp[u][0] = u 不来  </span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="c1"># dp[u][1] = u 来  </span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">u</span><span class="p">):</span>  
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    <span class="n">dp</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="n">u</span><span class="p">]</span>  <span class="c1"># 选当前的节点  </span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">path</span><span class="p">[</span><span class="n">u</span><span class="p">]:</span>  
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>        <span class="n">f</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>  
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>        <span class="n">dp</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="nb">max</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">dp</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>  
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>        <span class="n">dp</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="n">dp</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>  
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="n">f</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>  
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="nb">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">root</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">dp</span><span class="p">[</span><span class="n">root</span><span class="p">][</span><span class="mi">1</span><span class="p">]))</span>
+<h1 id="_1">树状数组<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>BIT，核心作用：<strong>单点修改，区间查询</strong> 这两个操作都是O(logn)，而且代码极短</p>
+<h3 id="1">1. 为什么要用树状数组？<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>若一个题目，要对数组里的某个元素进行修改，还要求某一个区间的和
+1. 若我们用普通数组，那修改是O(1), 求区间和是O(n)
+2. 若用前缀和数组，那求区间和是O(1), 修改是O(n)
+而树状数组这两个操作都是O(logn)</p>
+<h3 id="2-lowbit">2. 核心原理：lowbit<a class="headerlink" href="#2-lowbit" title="Permanent link">&para;</a></h3>
+<p>核心原理在于二进制
+使用lowbit技巧，取出最右边的1
+<code>x&amp;(-x)</code>与上负的自己（其实和计组里面求补码是同个原理）</p>
+<h3 id="3">3. 结构理解<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p>树状数组维护一个数组 <span class="arithmatex">\(C\)</span>（Tree 数组），其中 <span class="arithmatex">\(C[i]\)</span> 不仅保存 <span class="arithmatex">\(A[i]\)</span> 的值，而是保存<strong>一段区间的和</strong>。
+*   <strong><span class="arithmatex">\(C[i]\)</span> 管理的区间长度</strong>：就是 <code>lowbit(i)</code>。
+*   <strong><span class="arithmatex">\(C[i]\)</span> 管理的区间范围</strong>：<span class="arithmatex">\((i - \text{lowbit}(i), i]\)</span>。
+例如：
+<code>c[1]</code>  (0001) 管理长度 1， 区间<code>[1, 1]</code>
+<code>c[2]</code>  (0010) 管理长度 2， 区间<code>[1, 2]</code>
+也就是<strong>下标减去最右侧1再+1</strong></p>
+<p>这样求<code>a[1]</code>找<code>c[1]</code>就好了， 想要求<code>a[2]</code>，那么求<code>c[2] - c[1]</code>就可以了</p>
+<p><strong>注意：树状数组一定要从下标 1 开始！</strong>（因为 lowbit(0) = 0 会导致死循环）。</p>
+<h3 id="4">4. 树状数组的能力范围<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<p>普通树状数组维护的信息及运算要满足 <strong>结合律</strong> 且 <strong>可差分</strong>，如加法（和）、乘法（积）、异或等。
+- 结合律：(𝑥 ∘𝑦) ∘𝑧 =𝑥 ∘(𝑦 ∘𝑧)，其中 ∘ 是一个二元运算符。
+- 可差分：具有逆运算的运算，即已知 𝑥 ∘𝑦 和 𝑥可以求出 𝑦。
+像求区间最大值，最小值这些，就不是树状数组的能力范围</p>
+<h3 id="5">5. 树状数组的树形态<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<p>奇数下标是最底层的，<code>c[i]</code>只存<code>a[i]</code>自己，lowbit越大，层数越高
+每个x的父节点是<code>x + lowbit(x)</code>，</p>
+<h3 id="6">6. 两种操作<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
+<h4 id="1-query">（1） 区间查询 (Query)<a class="headerlink" href="#1-query" title="Permanent link">&para;</a></h4>
+<p>要求<code>a[1]</code> + ... + <code>a[x]</code>，那么本质上是把c数组里不重叠的区间拼起来
+方法：从x开始，不断减去最右边的1</p>
+<h4 id="2update">（2）单点修改（update）<a class="headerlink" href="#2update" title="Permanent link">&para;</a></h4>
+<p>给<code>a[i]</code>加上k，那么要给c数组里所有带有i的节点都更新
+方法：从i开始，不断加上<code>lowbit(i)</code>，直到超过数组上限</p>
+<h3 id="7">7. 模板<a class="headerlink" href="#7" title="Permanent link">&para;</a></h3>
+<p><strong>时刻牢记树状数组下标从 1 开始</strong>。
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># 下标 1-based, tree 全局或局部均可</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        <span class="n">tree</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="n">x</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="n">i</span> <span class="o">+=</span> <span class="n">i</span> <span class="o">&amp;</span> <span class="o">-</span><span class="n">i</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">query</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="k">while</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        <span class="n">s</span> <span class="o">+=</span> <span class="n">tree</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        <span class="n">i</span> <span class="o">-=</span> <span class="n">i</span> <span class="o">&amp;</span> <span class="o">-</span><span class="n">i</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="k">return</span> <span class="n">s</span>
+</span></code></pre></div></p>
+<h3 id="p3374-1-">模板题<a href="https://www.luogu.com.cn/problem/P3374">P3374 【模板】树状数组 1 - 洛谷</a><a class="headerlink" href="#p3374-1-" title="Permanent link">&para;</a></h3>
+<p>建树：建一个0列表，对每个位置都进行一次单点增加
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>  
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">data</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>  
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">iterator</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">n</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">iterator</span><span class="p">),</span> <span class="nb">next</span><span class="p">(</span><span class="n">iterator</span><span class="p">)</span>  
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[]</span>  
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>  
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">iterator</span><span class="p">))</span>  
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>  
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>  
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>        <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="n">x</span>  
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>        <span class="n">i</span> <span class="o">+=</span> <span class="n">i</span> <span class="o">&amp;</span> <span class="p">(</span><span class="o">-</span><span class="n">i</span><span class="p">)</span>  
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="k">def</span><span class="w"> </span><span class="nf">query</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>  
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    <span class="n">res</span> <span class="o">=</span> <span class="mi">0</span>  
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    <span class="k">while</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>  
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>        <span class="n">res</span> <span class="o">+=</span> <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>  
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>        <span class="n">i</span> <span class="o">-=</span> <span class="n">i</span> <span class="o">&amp;</span> <span class="p">(</span><span class="o">-</span><span class="n">i</span><span class="p">)</span>  
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>    <span class="k">return</span> <span class="n">res</span>  
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="c1"># 建树  </span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># 下标从1开始  </span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>  
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>    <span class="n">add</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>  
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="n">ans</span> <span class="o">=</span> <span class="p">[]</span>  
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>  
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>    <span class="n">opt</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">ky</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">iterator</span><span class="p">),</span> <span class="nb">next</span><span class="p">(</span><span class="n">iterator</span><span class="p">),</span> <span class="nb">next</span><span class="p">(</span><span class="n">iterator</span><span class="p">)</span>  
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>    <span class="k">if</span> <span class="n">opt</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>  
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>        <span class="n">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">ky</span><span class="p">)</span>  
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>    <span class="k">else</span><span class="p">:</span>  
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>        <span class="n">ans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">query</span><span class="p">(</span><span class="n">ky</span><span class="p">)</span> <span class="o">-</span> <span class="n">query</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)))</span>  <span class="c1"># 是x - 1不是x  </span>
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ans</span><span class="p">))</span>
 </span></code></pre></div></p>
 
 
